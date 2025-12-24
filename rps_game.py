@@ -4,7 +4,7 @@ import random
 # main window
 root = Tk()
 root.title("Easy Game")
-root.configure(background= "#9b59b6")
+root.configure(background= "#2f9db0")
 
 # loading image
 def load_img(file_path):
@@ -17,18 +17,18 @@ user_imgs = {"rock": load_img("rock-user.png"), "paper": load_img("paper-user.pn
 comp_imgs = {"rock": load_img("rock.png"), "paper": load_img("paper.png"), "scissor": load_img("scissor.png")}
 
 # labels:- to show text or images 
-comp_label = Label(root, text = "computer's choice", background= "#9b59b6", image = comp_imgs["rock"])
-user_label = Label(root, text = "your choice", background= "#9b59b6",  image = user_imgs["rock"])
+comp_label = Label(root, text = "computer's choice", background= "#2f9db0", image = comp_imgs["rock"])
+user_label = Label(root, text = "your choice", background= "#2f9db0",  image = user_imgs["rock"])
 comp_label.grid(row = 1, column = 0)
 user_label.grid(row = 1, column = 4)
 
-comp_score = Label(root, text=0, background= "#9b59b6" , foreground= "black" )
-user_score = Label(root, text=0, background= "#9b59b6" , foreground= "black" )
+comp_score = Label(root, text=0, background= "#2f9db0" , foreground= "black" )
+user_score = Label(root, text=0, background= "#2f9db0" , foreground= "black" )
 comp_score.grid(row = 1, column = 1)
 user_score.grid(row = 1, column = 3)
 
 # update messages 
-msg = Label(root, background= "#9b59b6", text = "Start game!" , fg = "black" , font = 50)
+msg = Label(root, background= "#2f9db0", text = "Start game!" , fg = "black" , font = 50)
 msg.grid(row=3, column=2)
 
 #score update
